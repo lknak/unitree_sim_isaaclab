@@ -54,7 +54,7 @@ Z_OFFSET_ALL = 0
 ROBO_POS=(0, -0.05 + Y_OFFSET_ALL, 0.8 + Z_OFFSET_ALL)
 ROBO_ROT=(0.7071, 0, 0, 0.7071)
 
-BASE_FOLDER_PATH = "/home/lux/Downloads/tray"
+BASE_FOLDER_PATH = "~/revelxlycheeai_hackathon/IsaacLab/tray"
 
 
 def create_rigid(usd_path, prim_path, translation, rotation, scale=[1, 1, 1]):
