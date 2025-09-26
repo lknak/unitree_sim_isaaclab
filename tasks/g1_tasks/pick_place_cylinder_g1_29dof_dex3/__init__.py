@@ -5,7 +5,7 @@
 import gymnasium as gym
 import os
 
-from . import pickplace_cylinder_g1_29dof_dex3_joint_env_cfg
+from . import pickplace_cylinder_g1_29dof_dex3_joint_env_cfg, waiter_env_cfg
 
 
 gym.register(
@@ -17,3 +17,11 @@ gym.register(
     disable_env_checker=True,
 )
 
+gym.register(
+    id="Isaac-Waiter",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
+    kwargs={
+        "env_cfg_entry_point": waiter_env_cfg.WaiterEnvCfg,
+    },
+    disable_env_checker=True,
+)

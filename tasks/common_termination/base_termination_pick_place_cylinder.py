@@ -37,4 +37,4 @@ def reset_object_estimate(
     done = done_x and done_y and done_height
 
     
-    return not done
+    return ~done
